@@ -1,7 +1,14 @@
-var name = "Jack";
-var age = "23";
+var balance = 300;
+var nikeSBShoes = 799.23;
+var coupon = 500;
 
-var message = "Hi my name is " + name + " and I am " + age + " years old.";
-
-alert(message);
-console.log(message);
+if (nikeSBShoes <= balance){
+    balance -= nikeSBShoes;
+    console.log("you can buy");
+} else if ( (nikeSBShoes - coupon) <= balance) {
+     balance -= (nikeSBShoes - coupon);
+     console.log("you can buy");
+} else {
+    console.log('you cannot get it');
+}
+    console.log("your balance is " + balance);
